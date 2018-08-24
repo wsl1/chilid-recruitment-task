@@ -17,14 +17,11 @@ class User extends Component {
             </div>
             <div className="user__details">
                 <p className="user__detail">
-                    <p className="user__name">{mock.name} {mock.surname}</p>
+                    <p className="user__name">{mock.name} {mock.surname} <span className="user__hearth">h</span></p>
                     <p className="user__address">{mock.city}, {mock.country}</p>
-                    <div className="user__hearth">h</div>
                 </p>
-                
-                
             </div>
-            
+            <div class="user__share">s</div>
         </div>
         <div className="user__bottom">
         
