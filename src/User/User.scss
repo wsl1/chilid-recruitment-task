@@ -1,0 +1,48 @@
+.user {
+
+    &__top {
+        display: flex;
+    }
+
+    &__photo {
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: gray;
+        margin: 20px;
+        overflow: hidden;
+    }
+
+    &__img {
+        height: 70px;
+        width: 70px;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+    }
+    &__detail {
+        margin: 0;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: Montserrat-Regular;
+        font-size: 18px;
+        color: #002C71;
+        letter-spacing: 0;
+        font-weight: bold;
+    }
+    &__address {
+        margin: 0;
+        font-family: Montserrat-Regular;
+        font-size: 12px;
+        color: #8298B9;
+        letter-spacing: 0;
+    }
+
+    &__hearth {
+    }
+}
