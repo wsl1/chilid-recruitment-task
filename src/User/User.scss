@@ -2,6 +2,7 @@
 
     &__top {
         display: flex;
+        position: relative;
     }
 
     &__photo {
@@ -44,5 +45,13 @@
     }
 
     &__hearth {
+        position: relative;
+        left: 10px;
+    }
+
+    &__share {
+        position: absolute;
+        right: 12px;
+        top: 12px;
     }
 }
