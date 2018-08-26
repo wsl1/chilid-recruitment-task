@@ -24,7 +24,23 @@ class User extends Component {
             <div class="user__share">s</div>
         </div>
         <div className="user__bottom">
-        
+            <div class="user__stats">
+                <p className="user__stat user__likes">{mock.stats.likes}</p>
+                <p className="user__stat-description">Likes</p>
+            </div>
+            <div className="vertical-line"></div>
+            <div class="user__stats">
+                <p className="user__stat user__following">{mock.stats.following}</p>
+                <p className="user__stat-description">Following</p>    
+            </div>
+            <div className="vertical-line"></div>
+            <div class="user__stats">
+                <p className="user__stat user__followers">{mock.stats.followers}</p>
+                <p className="user__stat-description">Followers</p>
+            </div>
+            <div class="user__follow">
+                <span class="user__follow-text">FOLLOW</span>
+            </div>
         </div>
         
       </div>
