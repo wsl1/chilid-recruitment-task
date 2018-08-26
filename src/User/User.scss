@@ -1,5 +1,11 @@
 .user {
 
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+    border-radius: 5px;
+    margin: 35px 17px 17px 17px;
+    padding-bottom: 17px;
+
     &__top {
         display: flex;
         position: relative;
@@ -54,4 +60,65 @@
         right: 12px;
         top: 12px;
     }
+
+    &__bottom {
+        display: flex;
+        margin-left: 21px;
+        margin-right: 22px;
+    }
+
+    &__stats {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__stat {
+        margin: 0;
+        font-family: Montserrat-Regular;
+        font-size: 24px;
+        color: #FFA640;
+        letter-spacing: 0;
+    }
+
+    &__stat-description {
+        margin: 0;
+        font-family: Montserrat-Regular;
+        font-size: 10px;
+        color: #343E00;
+        letter-spacing: 0;
+        line-height: 29px;
+    }
+    &__follow {
+        flex-grow: 1;
+        background: #FFA640;
+        border-radius: 100px;
+        font-family: Montserrat-SemiBold;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 4px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    &__follow-text {
+        width: 100%;
+        line-height: 0;
+    }
+
+    &__following {
+
+    }
+
+    &__followers {
+
+    }
+}
+
+
+.vertical-line {
+    width: 1px;
+    opacity: 0.1;
+    background: gray;
 }
