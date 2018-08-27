@@ -1,14 +1,14 @@
+
 .user {
 
     background: #FFFFFF;
     box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
     border-radius: 5px;
     margin: 35px 17px 17px 17px;
-    padding-bottom: 17px;
+    padding-bottom: 28px;
 
     &__top {
         display: flex;
-        position: relative;
     }
 
     &__photo {
@@ -59,8 +59,8 @@
 
     &__share {
         position: absolute;
-        right: 12px;
-        top: 12px;
+        right: 27px;
+        top: 46px;
         cursor: pointer;
     }
 
@@ -89,7 +89,6 @@
         font-size: 10px;
         color: #343E00;
         letter-spacing: 0;
-        line-height: 29px;
     }
     &__follow {
         cursor: pointer;
@@ -104,6 +103,7 @@
         display: flex;
         align-items: center;
         font-weight: 600;
+        height: 46px;
     }
 
     &__follow-text {
@@ -128,4 +128,51 @@
     width: 1px;
     opacity: 0.1;
     background: gray;
+}
+
+@media only screen and (max-width: 800px) {
+    .user {
+
+        padding-bottom: 17px;
+        
+        &__top {
+            padding-top: 38px;
+        }
+
+        &__photo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            top: -10px;
+        }
+
+        &__details {
+            width: 100%;
+        }
+
+        &__detail {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+            padding-top: 35px;
+            min-width: 10px;
+
+        }
+
+        &__follow { 
+            flex-basis: 100%;
+            width: 100%;
+            margin-top: 21px;
+        }
+
+        &__share {
+
+        }
+
+
+    }
 }

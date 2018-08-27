@@ -34,3 +34,14 @@
         letter-spacing: 0;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .comments {
+        &__hide-comments {
+            text-align: center;
+            margin-left: 0;
+        }
+    }
+    
+}
+
