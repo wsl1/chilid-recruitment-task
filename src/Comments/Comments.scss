@@ -1,0 +1,36 @@
+.comments {
+
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+    border-radius: 5px;
+    margin: 0 17px;
+
+    &__hide-comments {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        color: #FFA640;
+        letter-spacing: 0;
+        margin-left: 20px;
+        padding-top: 25px;
+        text-decoration: underline;
+    }
+
+    &__add-comment {
+        margin: 0 26px 0 26px;
+        margin-left: 5%;
+        padding-bottom: 32px;
+        padding-top: 51px;
+    }
+
+    &__add-comment-input {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #DBE0E8;
+        outline: none;
+        font-family: Montserrat-Regular;
+        font-size: 18px;
+        color: #8298B9;
+        letter-spacing: 0;
+    }
+}
