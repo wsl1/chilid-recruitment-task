@@ -1,0 +1,47 @@
+.comment {
+
+
+    &:nth-of-type(3) {
+        border: none;
+    }
+
+    &__top {
+        position: relative;
+    }
+
+    &__photo {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: gray;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    &__author {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        color: #002C71;
+        letter-spacing: 0;
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 11px;
+    }
+
+    &__content {
+        font-family: Montserrat-Regular;
+        font-size: 14px;
+        color: #444444;
+        letter-spacing: 0;
+        line-height: 21px;
+        margin: 0;
+    }
+
+    &__bottom {
+        padding-left: 51px;
+    }
+}
