@@ -19,11 +19,6 @@ class Comments extends Component {
         });
       } 
     });
-    /*$(".input1").on('keyup', function (e) {
-      if (e.keyCode == 13) {
-          // Do something
-      }
-  });*/
   }
 
   render() {
