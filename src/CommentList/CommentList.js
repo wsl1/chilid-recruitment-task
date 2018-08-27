@@ -3,16 +3,16 @@ import './CommentList.scss';
 import Comment from '../Comment/Comment';
 
 const CommentList = ({ comments }) => (
-        <ul className="comment-list">
+        <div className="comment-list">
             {   
                 comments.map(comment => (
-                    <li className="comment">
+                    <div className="comment">
                         <Comment data={comment} />
                         <hr className="comment-separator"/>
-                    </li>
+                    </div>
                 ))
             }
-        </ul>
+        </div>
 )
 
 export default CommentList;
