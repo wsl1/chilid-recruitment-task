@@ -1,6 +1,6 @@
 import React from 'react';
 import './Comment.scss';
-import CommentPhoto from './author1.jpg';
+import CommentPhoto from './author.jpg';
 
 const Comment = ({data}) => (
     <div className="comment">
