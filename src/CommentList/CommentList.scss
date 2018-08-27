@@ -1,13 +1,19 @@
 .comment-list {
     list-style-type: none;
-    padding-right: 50px;
+    //padding-right: 50px;
     height: 230px;
     overflow-y: scroll;
+    overflow-x: hidden;
     margin-bottom: 0px;
     
 }
 
 .comment-separator {
+    opacity: 0.2;
+    background-color: #EBEBEB;
+    margin: 0;
+    margin-top: 25px;
+    margin-right: 10px;
     /*height: 1px;
     background: #EBEBEB;
     opacity: 0.3;
