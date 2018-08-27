@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Comments.scss';
 import mock from '../mock.json';
 import CommentList from '../CommentList/CommentList';
@@ -32,6 +33,11 @@ class Comments extends Component {
       </div>
     );
   }
+}
+
+Comments.propTypes = {
+  comments: PropTypes.arrayOf(PropTypes.object),
+  addComment: PropTypes.func
 }
 
 export default Comments;

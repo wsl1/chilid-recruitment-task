@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Comment.scss';
 import CommentPhoto from './author.jpg';
 
@@ -13,5 +14,9 @@ const Comment = ({data}) => (
         </div>
     </div>
 );
+
+Comment.propTypes = {
+    data: PropTypes.object
+}
 
 export default Comment;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './User.scss';
 import UserPhoto from './User.jpg'
 import mock from '../mock.json';
@@ -44,6 +45,13 @@ class User extends Component {
       </div>
     );
   }
+}
+
+User.propTypes = {
+    likes: PropTypes.number,
+    followers: PropTypes.number,
+    like: PropTypes.func,
+    follow: PropTypes.func
 }
 
 export default User;
