@@ -53,12 +53,15 @@
     &__hearth {
         position: relative;
         left: 10px;
+        user-select: none;
+        cursor: pointer;
     }
 
     &__share {
         position: absolute;
         right: 12px;
         top: 12px;
+        cursor: pointer;
     }
 
     &__bottom {
@@ -89,6 +92,7 @@
         line-height: 29px;
     }
     &__follow {
+        cursor: pointer;
         flex-grow: 1;
         background: #FFA640;
         border-radius: 100px;
@@ -103,8 +107,11 @@
     }
 
     &__follow-text {
+        user-select: none;
+        font-weight: 18px;
         width: 100%;
         line-height: 0;
+        transform: translateY(-50%);
     }
 
     &__following {
