@@ -1,5 +1,5 @@
 {
-    "name": "HWojciech",
+    "name": "Wojciech",
     "surname": "Słomczyński",
     "city": "Katowice",
     "country": "Poland",
@@ -7,5 +7,6 @@
         "likes": 121,
         "following": 723,
         "followers": 4433
-    }
+    },
+    "hideComments": 353
 }
