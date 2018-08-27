@@ -1,18 +1,26 @@
+.profile-wrapper {
+    position: relative;
+    margin: 20px;
+}
+
 .profile {
-    //background:linear-gradient(blue 95px, transparent 95px);
+    box-shadow: 0 0 4px 0 rgba(172,172,172,0.50);
+    border-radius: 5px;
+
+    //border: 1px solid gray;
+    //border-radius: 20px;
+    //overflow: visible;
     &::after {
         content:"";
+        overflow: hidden;
         background:#002C71 100%;
-        position:fixed;
+        position: absolute;
         top:0;
         bottom: calc(100% - 95px);
         right:0;
         left:0;
-        z-index:-1;
-    }
+        z-index: -1;
     
-    &__about {
-
-        
     }
+
 }
