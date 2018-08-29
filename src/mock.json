@@ -8,5 +8,6 @@
         "following": 723,
         "followers": 4433
     },
-    "hideComments": 353
+    "hideComments": 353,
+    "commentAuthor": "TestName TestSurname"
 }
