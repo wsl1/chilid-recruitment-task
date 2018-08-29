@@ -8,6 +8,7 @@ const Comment = ({data}) => (
         <div className="comment__top">
             <img className="comment__photo" src={CommentPhoto} alt="author"/>
             <p className="comment__author">{data.author}</p>
+            <p className="comment__date">1d</p>
         </div>
         <div className="comment__bottom">
             <p className="comment__content">{data.content}</p>
