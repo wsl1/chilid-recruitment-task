@@ -36,6 +36,17 @@
         margin-left: 11px;
     }
 
+    &__date {
+        position: absolute;
+        font-size: 14px;
+        right: 27px;
+        top: 2px;
+        opacity: 0.5;
+        font-family: Montserrat-Regular;
+        color: #002C71;
+        letter-spacing: 0;
+    }
+
     &__content {
         font-family: Montserrat-Regular;
         font-size: 14px;
