@@ -50,20 +50,6 @@
         letter-spacing: 0;
     }
 
-    &__hearth {
-        position: relative;
-        left: 10px;
-        user-select: none;
-        cursor: pointer;
-    }
-
-    &__share {
-        position: absolute;
-        right: 27px;
-        top: 46px;
-        cursor: pointer;
-    }
-
     &__bottom {
         display: flex;
         margin-left: 21px;
@@ -120,6 +106,31 @@
 
     &__followers {
 
+    }
+}
+
+.svg {
+    &-share {
+        position: absolute;
+        right: 27px;
+        fill: #FFA640;
+        top: 46px;
+        cursor: pointer;
+        width: 10px;
+        height: 10px;
+    }
+
+    &-hearth {
+        stroke-width: 5;
+        stroke:  #D3D3D3;
+        width: 12px;
+        height: 10px;
+        fill: #D3D3D3;
+        position: relative;
+        left: 10px;
+        color: #8298B9;
+        user-select: none;
+        cursor: pointer;
     }
 }
 
