@@ -15,7 +15,7 @@ class Comments extends Component {
       if (e.keyCode === 13) {
         e.preventDefault();
         this.props.addComment({
-          author: "test test",
+          author: mock.commentAuthor,
           content: content
         });
       } 
