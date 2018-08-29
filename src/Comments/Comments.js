@@ -28,7 +28,7 @@ class Comments extends Component {
         <p className="comments__hide-comments">Hide comments ({mock.hideComments})</p>
         <CommentList comments={this.props.comments}/>
         <div className="comments__add-comment">
-          <input className="comments__add-comment-input" type="textarea" ref={this.inputRef}/>
+          <input className="comments__add-comment-input" placeholder="Add a comment" type="textarea" ref={this.inputRef}/>
         </div>
       </div>
     );
