@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './User.scss';
 import UserPhoto from './User.jpg'
+import { ShareSvg, HearthSvg } from './UserSvg';
 import mock from '../mock.json';
 
 class User extends Component {
@@ -16,11 +17,11 @@ class User extends Component {
             </div>
             <div className="user__details">
                 <div className="user__detail">
-                    <p className="user__name">{mock.name} {mock.surname} <span onClick={like} className="user__hearth">h</span></p>
+                    <p className="user__name">{mock.name} {mock.surname} <HearthSvg like={like}/></p>
                     <p className="user__address">{mock.city}, {mock.country}</p>
                 </div>
             </div>
-            <div className="user__share">s</div>
+            <ShareSvg/>
         </div>
         <div className="user__bottom">
             <div className="user__stats">
