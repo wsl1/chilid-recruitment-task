@@ -5,8 +5,7 @@ import './App.scss';
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{display: 'flex'}}>
-      aaaaaaaaaaaaaaaaaaaaa
+      <div className="App" style={{margin: '20px'}}>
         <Profile />
       </div>
     );
