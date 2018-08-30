@@ -8,22 +8,24 @@ import mock from '../mock.json';
 class User extends Component {
 
   render() {
+    const isSmall = this.props.small;
     const {likes, followers, like, follow} = this.props;
+
     return (
-      <div className="user">
-        <div className="user__top">
-            <div className="user__photo">
+      <div className={`user ${isSmall ? 'user--small' : ''}`}>
+        <div className={`user__top ${isSmall ? 'user__top--small' : ''}`}>
+            <div className={`user__photo ${isSmall ? 'user__photo--small' : ''}`}>
                 <img src={UserPhoto} className="user__img" alt="user"/>
             </div>
-            <div className="user__details">
-                <div className="user__detail">
+            <div className={`user__details ${isSmall ? 'user__details--small' : ''}`}>
+                <div className={`user__detail ${isSmall ? 'user__detail--small' : ''}`}>
                     <p className="user__name">{mock.name} {mock.surname} <HearthSvg like={like}/></p>
                     <p className="user__address">{mock.city}, {mock.country}</p>
                 </div>
             </div>
             <ShareSvg/>
         </div>
-        <div className="user__bottom">
+        <div className={`user__bottom ${isSmall ? 'user__bottom--small' : ''}`}>
             <div className="user__stats">
                 <p className="user__stat user__likes">{likes}</p>
                 <p className="user__stat-description">Likes</p>
@@ -38,7 +40,7 @@ class User extends Component {
                 <p className="user__stat user__followers">{followers}</p>
                 <p className="user__stat-description">Followers</p>
             </div>
-            <div onClick={follow} className="user__follow">
+            <div onClick={follow} className={`user__follow ${isSmall ? 'user__follow--small' : ''}`}>
                 <span className="user__follow-text">FOLLOW</span>
             </div>
         </div>
@@ -52,7 +54,8 @@ User.propTypes = {
     likes: PropTypes.number,
     followers: PropTypes.number,
     like: PropTypes.func,
-    follow: PropTypes.func
+    follow: PropTypes.func,
+    small: PropTypes.bool
 }
 
 export default User;
