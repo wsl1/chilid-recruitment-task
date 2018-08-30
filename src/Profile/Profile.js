@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './Profile.scss';
 import User from '../User/User';
 import Comments from '../Comments/Comments';
@@ -46,6 +47,10 @@ class Profile extends Component {
       </div>
     );
   }
+}
+
+Profile.propTypes = {
+  small: PropTypes.bool
 }
 
 export default Profile;
