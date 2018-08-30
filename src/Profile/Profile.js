@@ -41,7 +41,7 @@ class Profile extends Component {
     return (
       <div className="profile-wrapper">
         <div className="profile" ref={this.ref}>
-              <User likes={this.state.likes} followers={this.state.followers} like={this.like} follow={this.follow}/>
+          <User likes={this.state.likes} followers={this.state.followers} like={this.like} follow={this.follow}/>
           <Comments comments={this.state.comments} addComment={this.addComment}/>
         </div>
       </div>
