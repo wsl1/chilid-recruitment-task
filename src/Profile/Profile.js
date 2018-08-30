@@ -23,7 +23,6 @@ class Profile extends Component {
   addComment = (comment) => {
     let comments = [...this.state.comments];
     comments = [comment, ...comments];
-    console.log(comments);
     this.setState({
       comments: comments
     })
