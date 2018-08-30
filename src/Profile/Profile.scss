@@ -26,10 +26,8 @@
     
     }
 
-}
-
-@media only screen and (max-width: 800px) {
-    .profile {
+    &--small {
         height: 555px;
     }
+
 }
