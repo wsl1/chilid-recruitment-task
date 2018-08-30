@@ -107,6 +107,48 @@
     &__followers {
 
     }
+
+    &--small {
+        padding-bottom: 17px;
+    }
+    
+    &__top--small {
+        padding-top: 38px;
+    }
+
+    &__photo--small {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        top: -10px;
+    }
+
+    &__details--small {
+        width: 100%;
+    }
+
+    &__detail--small {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__bottom--small {
+        flex-wrap: wrap;
+        padding-top: 35px;
+        min-width: 10px;
+
+    }
+
+    &__follow--small { 
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 21px;
+    }
+
+    &__share--small {
+
+    }
 }
 
 .svg {
@@ -139,51 +181,4 @@
     width: 1px;
     opacity: 0.1;
     background: gray;
-}
-
-@media only screen and (max-width: 800px) {
-    .user {
-
-        padding-bottom: 17px;
-        
-        &__top {
-            padding-top: 38px;
-        }
-
-        &__photo {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            margin: 0;
-            top: -10px;
-        }
-
-        &__details {
-            width: 100%;
-        }
-
-        &__detail {
-            width: 100%;
-            text-align: center;
-        }
-
-        &__bottom {
-            flex-wrap: wrap;
-            padding-top: 35px;
-            min-width: 10px;
-
-        }
-
-        &__follow { 
-            flex-basis: 100%;
-            width: 100%;
-            margin-top: 21px;
-        }
-
-        &__share {
-
-        }
-
-
-    }
 }
