@@ -38,9 +38,12 @@ class Profile extends Component {
   }
 
   render() {
+
+    const isSmall = this.props.small
+
     return (
       <div className="profile-wrapper">
-        <div className="profile" ref={this.ref}>
+        <div className={`profile ${isSmall ? 'profile--small' : ''}`} ref={this.ref}>
           <User likes={this.state.likes} followers={this.state.followers} like={this.like} follow={this.follow}/>
           <Comments comments={this.state.comments} addComment={this.addComment}/>
         </div>
