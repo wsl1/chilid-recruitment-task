@@ -21,6 +21,7 @@
         background-color: gray;
         overflow: hidden;
         margin: 0;
+        user-select: none; /* fixes bug */
     }
 
     &__author {
