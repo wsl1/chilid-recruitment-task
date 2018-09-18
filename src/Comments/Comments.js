@@ -23,9 +23,10 @@ class Comments extends Component {
   }
 
   render() {
+    const isSmall = this.props.small;
     return (
       <div className="comments">
-        <p className="comments__hide-comments">Hide comments ({mock.hideComments})</p>
+        <p className={`comments__hide-comments ${isSmall ? 'comments__hide-comments--small' : ''}`}>Hide comments ({mock.hideComments})</p>
         <CommentList comments={this.props.comments}/>
         <div className="comments__add-comment">
           <input className="comments__add-comment-input" placeholder="Add a comment" type="textarea" ref={this.inputRef}/>
